@@ -490,7 +490,7 @@
           
 
   
-    <div id="gitalk-container"></div>
+   <div id="gitalk-container"></div>
   
 
 
@@ -758,26 +758,18 @@
 
 
 
-
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '395a3b39110888782cfc',
           clientSecret: 'b34add8eeaaf9282b6ff8510d938960f175c4e75',
           repo: 'gitalk',
-          owner: 'geedme',
+          owner: '',
           admin: ['geedme'],
           id: location.pathname,
-          labels: 'gitalk',
-          perPage: 15,
-          pagerDirection: 'last',
-          createIssueManually: true,
-          distractionFreeMode: false
+          distractionFreeMode: 'true'
         })
-
         gitalk.render('gitalk-container')           
        </script>
 
