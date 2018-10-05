@@ -1,74 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>文章书写发布</title>
-      <link href="/2018/10/05/%E6%96%87%E7%AB%A0%E4%B9%A6%E5%86%99%E5%8F%91%E5%B8%83/"/>
-      <url>/2018/10/05/%E6%96%87%E7%AB%A0%E4%B9%A6%E5%86%99%E5%8F%91%E5%B8%83/</url>
-      
-        <content type="html"><![CDATA[<p>昨天刚刚搭建了个人的第一个博客，经过一番考量最终选择了hexo，环境搭建近期会整理一下，网上也有很多的资料，现在看看基础的文章写作方面的操作。</p><h2 id="第一步-基础了解"><a href="#第一步-基础了解" class="headerlink" title="第一步 基础了解"></a>第一步 基础了解</h2><p>打开hexo项目目录，可以看到hexo已经帮我们生成了一个样例文件hello-word.md，hexo serve之后打开localhost:4000可以进行本地预览<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure></p><p>加上”–port=端口号”,可以指定不同端口号预览, 如<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo serve --port=4001</span><br></pre></td></tr></table></figure></p><h2 id="第二步-基本操作"><a href="#第二步-基本操作" class="headerlink" title="第二步 基本操作"></a>第二步 基本操作</h2><p>打开teminal，在项目根目录下,输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="built_in">test</span></span><br></pre></td></tr></table></figure></p><p>test是文章标题，如果文章标题有空格最好用双引号将文章标题包起来，刷新页面即可看到我们的文章已经可以预览了</p><p>生成文章同样加不同的参数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft <span class="built_in">test</span>-draft</span><br></pre></td></tr></table></figure></p><p>草稿用hexo serve –draft可预览<br>hexo puslish test-draft可以发布文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="built_in">test</span>-page</span><br></pre></td></tr></table></figure><p>page需要在地址栏加标题名访问，不在文章列表</p><h2 id="生成-部署"><a href="#生成-部署" class="headerlink" title="生成 部署"></a>生成 部署</h2><p>生成文章<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure></p><p>打包文章<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    <entry>
-      <title>添加评论系统</title>
-      <link href="/2018/10/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
-      <url>/2018/10/05/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    <entry>
-      <title>测试</title>
-      <link href="/2018/10/05/%E6%B5%8B%E8%AF%95/"/>
-      <url>/2018/10/05/%E6%B5%8B%E8%AF%95/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[文章书写发布]]></title>
+    <url>%2F2018%2F10%2F05%2F%E6%96%87%E7%AB%A0%E4%B9%A6%E5%86%99%E5%8F%91%E5%B8%83%2F</url>
+    <content type="text"><![CDATA[昨天刚刚搭建了个人的第一个博客，经过一番考量最终选择了hexo，环境搭建近期会整理一下，网上也有很多的资料，现在看看基础的文章写作方面的操作。 第一步 基础了解打开hexo项目目录，可以看到hexo已经帮我们生成了一个样例文件hello-word.md，hexo serve之后打开localhost:4000可以进行本地预览1hexo serve 加上”–port=端口号”,可以指定不同端口号预览, 如1hexo serve --port=4001 第二步 基本操作打开teminal，在项目根目录下,输入1hexo new test test是文章标题，如果文章标题有空格最好用双引号将文章标题包起来，刷新页面即可看到我们的文章已经可以预览了 生成文章同样加不同的参数1hexo new draft test-draft 草稿用hexo serve –draft可预览hexo puslish test-draft可以发布文章 1hexo new page test-page page需要在地址栏加标题名访问，不在文章列表 生成 部署生成文章1hexo g 打包文章1hexo d]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[添加评论系统]]></title>
+    <url>%2F2018%2F10%2F05%2F%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[测试]]></title>
+    <url>%2F2018%2F10%2F05%2F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"></content>
       <categories>
-          
-          <category> 测试分类 </category>
-          
+        <category>测试分类</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 测试标签 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>一步步搭建hexo博客</title>
-      <link href="/2018/10/04/%E6%90%AD%E5%BB%BAhexo/"/>
-      <url>/2018/10/04/%E6%90%AD%E5%BB%BAhexo/</url>
-      
-        <content type="html"><![CDATA[<h3 id="花了两个小时终于搭建完成了自己的github博客"><a href="#花了两个小时终于搭建完成了自己的github博客" class="headerlink" title="花了两个小时终于搭建完成了自己的github博客"></a>花了两个小时终于搭建完成了自己的github博客</h3>]]></content>
-      
-      
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/10/04/hello-world/"/>
-      <url>/2018/10/04/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>测试标签</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一步步搭建hexo博客]]></title>
+    <url>%2F2018%2F10%2F04%2F%E6%90%AD%E5%BB%BAhexo%2F</url>
+    <content type="text"><![CDATA[花了两个小时终于搭建完成了自己的github博客]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F10%2F04%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
