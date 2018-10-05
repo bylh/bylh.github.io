@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="You Know Nothing">
 <meta property="og:description" content="昨天刚刚搭建了个人的第一个博客，经过一番考量最终选择了hexo，环境搭建近期会整理一下，网上也有很多的资料，现在看看基础的文章写作方面的操作。 第一步 基础了解打开hexo项目目录，可以看到hexo已经帮我们生成了一个样例文件hello-word.md，hexo serve之后打开localhost:4000可以进行本地预览1hexo serve 加上”–port=端口号”,可以指定不同端口号预览">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-05T10:03:43.539Z">
+<meta property="og:updated_time" content="2018-10-05T10:40:12.261Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文章书写发布">
 <meta name="twitter:description" content="昨天刚刚搭建了个人的第一个博客，经过一番考量最终选择了hexo，环境搭建近期会整理一下，网上也有很多的资料，现在看看基础的文章写作方面的操作。 第一步 基础了解打开hexo项目目录，可以看到hexo已经帮我们生成了一个样例文件hello-word.md，hexo serve之后打开localhost:4000可以进行本地预览1hexo serve 加上”–port=端口号”,可以指定不同端口号预览">
@@ -332,7 +332,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bylh">
       <meta itemprop="description" content="我的github博客">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -369,7 +369,7 @@
                 
               
 
-              <time title="创建时间：2018-10-05 18:03:27 / 修改时间：18:03:43" itemprop="dateCreated datePublished" datetime="2018-10-05T18:03:27+08:00">2018-10-05</time>
+              <time title="创建时间：2018-10-05 18:03:27 / 修改时间：18:40:12" itemprop="dateCreated datePublished" datetime="2018-10-05T18:03:27+08:00">2018-10-05</time>
             
 
             
@@ -396,6 +396,17 @@
           
 
           
+          
+             <span id="/2018/10/05/文章书写发布/" class="leancloud_visitors" data-flag-title="文章书写发布">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -525,6 +536,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="bylh" />
+            
               <p class="site-author-name" itemprop="name">bylh</p>
               <p class="site-description motion-element" itemprop="description">我的github博客</p>
           </div>
@@ -648,7 +663,14 @@
 
 
 
+<span id="busuanzi_container_site_pv" class="theme-info">
+&nbsp;&nbsp;|&nbsp;&nbsp;本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv" class="theme-info">
+&nbsp;&nbsp;|&nbsp;&nbsp;本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         
 
 
@@ -1125,6 +1147,75 @@
 
 
   
+
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { "$in": entries } }) })
+        .done(function ({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log("LeanCloud Counter Error: " + responseJSON.code + " " + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + "LbEITldwfUtXMdquuLFbvHPk-gzGzoHsz")
+        .done(function ({ api_server }) {
+          var Counter = function (method, url, data) {
+            return $.ajax({
+              method: method,
+              url: `https://${api_server}/1.1${url}`,
+              headers: {
+                'X-LC-Id': "LbEITldwfUtXMdquuLFbvHPk-gzGzoHsz",
+                'X-LC-Key': "trTlzpdb3GMeYWbJFRqmPQ8B",
+                'Content-Type': 'application/json',
+              },
+              data: data,
+            });
+          };
+          
+          if ($('.post-title-link').length >= 1) {
+            showTime(Counter);
+          }
+          
+        })
+    });
+  </script>
+
+
 
   
 
