@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[测试]]></title>
-    <url>%2F2018%2F10%2F05%2F%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>测试分类</category>
-      </categories>
-      <tags>
-        <tag>测试标签</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[如何在文章插入图片（待完善）]]></title>
-    <url>%2F2018%2F10%2F05%2F%E5%A6%82%E4%BD%95%E5%9C%A8%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[hexo博客写作教程（待完善）]]></title>
-    <url>%2F2018%2F10%2F05%2Fhexo%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E6%95%99%E7%A8%8B%2F</url>
+    <title><![CDATA[hexo博客如何写文章]]></title>
+    <url>%2F2018%2F10%2F05%2Fhexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%86%99%E6%96%87%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[昨天刚刚搭建了个人的第一个博客，经过一番考量最终选择了hexo，环境搭建近期会整理一下，网上也有很多的资料，现在看看基础的文章写作方面的操作。 第一步 基础了解打开hexo项目目录，可以看到hexo已经帮我们生成了一个样例文件hello-word.md，hexo serve之后打开localhost:4000可以进行本地预览1hexo serve 加上”–port=端口号”,可以指定不同端口号预览, 如1hexo serve --port=4001 第二步 基本操作打开teminal，在项目根目录下,输入1hexo new test test是文章标题，如果文章标题有空格最好用双引号将文章标题包起来，刷新页面即可看到我们的文章已经可以预览了 生成文章同样加不同的参数1hexo new draft test-draft 草稿用hexo serve –draft可预览hexo puslish test-draft可以发布文章 1hexo new page test-page page需要在地址栏加标题名访问，不在文章列表 生成 部署生成文章1hexo g 打包文章1hexo d]]></content>
       <categories>
         <category>教程</category>
@@ -27,6 +11,17 @@
         <tag>jQuery</tag>
         <tag>表格</tag>
         <tag>表单验证</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[测试]]></title>
+    <url>%2F2018%2F10%2F05%2F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>测试分类</category>
+      </categories>
+      <tags>
+        <tag>测试标签</tag>
       </tags>
   </entry>
   <entry>
