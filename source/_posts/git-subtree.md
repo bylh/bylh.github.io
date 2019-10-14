@@ -2,24 +2,37 @@
 title: git subtree
 date: 2019-10-14 19:47:17
 tags:
-- git
+  - git
 ---
 
+- add subtree
 
-add subtree
-git subtree add --prefix=extra  https://github.com/bylh/extra.git master
+  ```shell
+  git subtree add --prefix=extra  https://github.com/bylh/extra.git master
+  ```
 
-pull subtree
-git subtree pull --prefix=extra  https://github.com/bylh/extra.git master
+- pull subtree
 
-push subtree
-git subtree push --prefix=extra  https://github.com/bylh/extra.git master
+  ```bash
+  git subtree pull --prefix=extra  https://github.com/bylh/extra.git master
+  ```
 
-remove subtree
-git rm -rf extra
+- push subtree
 
+  ```bash
+   git subtree push --prefix=extra https://github.com/bylh/extra.git master
+  ```
 
-简化subtree名称
-git remote add -f extra https://github.com/bylh/extra.git
+- remove subtree
 
-git subtree pull --prefix=extra  extra master
+  ```shell
+  git rm -rf extra
+  ```
+
+- 简化 subtree 名称
+  
+  ```bash
+  git remote add -f extra https://github.com/bylh/extra.git
+  git subtree pull --prefix=extra extra master
+  ```
+  
