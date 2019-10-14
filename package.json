@@ -6,7 +6,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "next-pull": "git subtree pull --prefix=themes/next https://github.com/theme-next/hexo-theme-next.git master",
+    "next-push": "git subtree push --prefix=themes/next https://github.com/theme-next/hexo-theme-next.git master"
   },
   "hexo": {
     "version": "3.9.0"
