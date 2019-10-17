@@ -44,7 +44,7 @@ for $inject_mixin in hexo-config('injects.mixin')
 for $inject_style in hexo-config('injects.style')
   @import $inject_style;
 
-// bylh
+// bylh start
 // 添加背景图片
 body {
   background: url(https://source.unsplash.com/random/1600x900?wallpapers);
@@ -53,14 +53,39 @@ body {
   background-attachment: fixed;
   background-position: 50% 50%;
 }
+.main {
+  // background: #fff;
+
+}
+
+@media (min-width: 1600px) {
+  .main-inner {
+      width: 1200px;
+  }
+}
 
 // 修改主体透明度
 .main-inner {
-  background: #fff;
-  opacity: 0.9;
+  padding: 30px;
+  // 为什么使用backgroud rgba改变透明度，而不是opactity ,因为opactity会改变层叠顺序
+  background: rgba(255, 255, 255, 0.9);
+  // opacity: 0.9;
+  // z-index: 1;
 }
 
 // 修改菜单栏透明度
 .header-inner {
-  opacity: 0.9;
+  // background: rgba(255, 255, 255, 0.7);
+  // opacity: 0.9;
+  // z-index: 1;
 }
+// 头部透明度
+.header {
+  background: rgba(255, 255, 255, 0.7);
+}
+// 底部透明度
+.footer {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+// bylh end
