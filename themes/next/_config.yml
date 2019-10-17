@@ -147,8 +147,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  # position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -174,9 +174,9 @@ avatar:
   # You can also use other linking images.
   url: https://fadxgq.dm.files.1drv.com/y4mwSMOBfKrx0q2UclrS5zJ6bK7izwHqz8NX25nJXsvfipIPrE7WCiEVHhW1bMpyBBVe7lv3FWUd3RgyJ4XDpU1rJLRu9kG5h3TbbmxrEiZl3ITajliQafCfFSzXJsA8pXCZCWbZjLMQz4XT_SWlGHokmHIqNHI-q3WNbwFWZk6Vc5wCQ8SlSWbugm6vmrNB5tZWVWiffKZ2s5ZhCEVkQEu8Q?width=440&height=440&cropmode=none #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
